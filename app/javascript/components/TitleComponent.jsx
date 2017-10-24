@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 
+
 class TitleComponent extends Component {
 	render(){
 		return(
