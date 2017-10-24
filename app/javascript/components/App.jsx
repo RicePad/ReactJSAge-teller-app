@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TitleComponent from './TitleComponent';
+import DisplayAge from './DisplayAge'
 import {Form, FormControl, Button } from 'react-bootstrap';
 
 
@@ -34,7 +35,8 @@ class App extends Component {
 				   </FormControl>
 				   {'   '}
 				   <Button onClick= {() => this.changeBirthday()}> Submit </Button>
-				   </Form>	
+				   </Form>
+				   <DisplayAge date={this.state.birthDate} />	
 			</section>
 			)
 	}
