@@ -8,5 +8,5 @@ import TitleComponent from '../components/TitleComponent'
 const indexTitle = document.querySelector('.index-title');
 
 ReactDom.render(
-	<App />, document.querySelector('.index-title')
+	<App />, indexTitle
 	);

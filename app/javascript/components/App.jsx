@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import TitleComponent from './TitleComponent';
+import {Form, FormControl, Button } from 'react-bootstrap';
 
 
 class App extends Component {
 
 	render(){
 		return(
-			<section>
-				<TitleComponent />
-				<h1>App Component</h1>	
+			<section className="App">
+				<Form inline>
+				   <h2>Age App Teller</h2>
+				   <FormControl type="date">
+				   </FormControl>
+				   {' '}
+				   <Button> Submit </Button>
+				   </Form>	
 			</section>
 			)
 	}
-ß
+
 }
 
 
