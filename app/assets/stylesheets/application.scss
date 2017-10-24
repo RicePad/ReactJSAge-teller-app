@@ -2,8 +2,30 @@
 
 
 .App {
-	margin-top: 25%;
+	margin-top: 5%;
 	padding-left: 35%;
 	text-align: center;
 	font-size: 16px;
+	position: fixed;
+}
+
+.display-age{
+	padding-right: 40%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.party-popper {
+	width: 200px;
+	height: 200px;
+}
+
+.fade {
+	animation-name: fade-in;
+	animation-duration: 2s ;
+}
+
+
+.display-age{
+	opacity: 100;
 }
