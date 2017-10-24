@@ -9,10 +9,11 @@ class App extends Component {
 		return(
 			<section className="App">
 				<Form inline>
-				   <h2>Age App Teller</h2>
+				   <h2>Age Teller App</h2>
+				   
 				   <FormControl type="date">
 				   </FormControl>
-				   {' '}
+				   {'   '}
 				   <Button> Submit </Button>
 				   </Form>	
 			</section>
