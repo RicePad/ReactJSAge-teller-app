@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import partyPopper from '../assets/party-popper';
+// import partyPopper from '../assets/party-popper';
 
+
+export const partyPopper = "https://s1.postimg.org/5lfe4ipph7/party-popper.jpg"
 
 class DisplayAge extends Component {
 	
