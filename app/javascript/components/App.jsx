@@ -31,10 +31,11 @@ class App extends Component {
 
 	render(){
 		return(
-			<div className="App">
+			<section>
+			   <h2 className="app-title">Age Teller App</h2>
+
+				<div className="App">
 				<Form inline>
-				   <h2>Age Teller App</h2>
-				   
 				   <FormControl 
 				   	type="date"
 				   	onChange= {(event) => this.setState({ newDate: event.target.value})}
@@ -54,6 +55,8 @@ class App extends Component {
 				   </Form>
 				   
 			</div>
+		</section>
+
 			)
 	}
 
