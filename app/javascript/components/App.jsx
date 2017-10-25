@@ -10,7 +10,9 @@ class App extends Component {
 
 		this.state = {
 			newDate: '',
-			birthDate: '01-02-1996'
+			birthDate: '01-02-1996',
+			showStats: false
+
 
 
 		}
@@ -19,12 +21,17 @@ class App extends Component {
 
 	changeBirthday(){
 		console.log(this.state);
-		this.setState({ birthDate: this.state.newDate})
+		this.setState({ 
+			birthDate: this.state.newDate,
+			showStats: true
+
+
+		})
 	}
 
 	render(){
 		return(
-			<section className="App">
+			<div className="App">
 				<Form inline>
 				   <h2>Age Teller App</h2>
 				   
@@ -35,13 +42,22 @@ class App extends Component {
 				   </FormControl>
 				   {'   '}
 				   <Button onClick= {() => this.changeBirthday()}> Submit </Button>
+				   {
+			            this.state.showStats ?
+			              <div className="fade display-age">
+						  	<DisplayAge date={this.state.birthDate} />	
+			              </div>
+			            :
+              			  <div></div>
+          }
+
 				   </Form>
-				   <DisplayAge date={this.state.birthDate} />	
-			</section>
+				   
+			</div>
 			)
 	}
 
-}
+	}
 
 
 export default App;
